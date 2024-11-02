@@ -2,36 +2,46 @@
 
 </br>
 
-## **🤔 Apa itu Image Processing?**
+## **🤔 Apa Itu Image Processing?**
 
-Pada dasarnya, **Image Processing** adalah seni dan ilmu mengubah gambar agar lebih berguna dan bermanfaat. Dengan memanipulasi gambar, kita dapat mengetahui detail tersembunyi, menyempurnakan fitur tertentu, atau mengekstrak data penting dari gambar. Image processing menganggap gambar sebagai sinyal 2D, yang memungkinkan kita menerapkan berbagai teknik pemrosesan sinyal pada gambar tersebut, menjadikan gambar lebih bermakna tetapi juga lebih mudah diadaptasi untuk berbagai aplikasi.
+Secara umum, `image processing` adalah seni dan teknik mengolah gambar agar menjadi lebih berguna dan bermanfaat. Dengan memanipulasi gambar, kita dapat mengungkap detail tersembunyi, menyempurnakan fitur tertentu, atau mengekstrak data penting dari gambar. _Image processing_ memandang gambar sebagai sinyal 2D, yang memungkinkan kita menerapkan berbagai teknik pemrosesan sinyal untuk membuat gambar lebih bermakna dan lebih mudah diadaptasi dalam berbagai aplikasi. Berikut beberapa teknik utama dalam image processing:
 
-Key Types of Image Processing:
-
-1. **Visualization** 🌐 - Uncover objects or details in images that aren't immediately visible.
-2. **Recognition** 🔍 - Identify and distinguish objects within an image.
-3. **Sharpening and Restoration** ✨ - Enhance or repair an image, improving quality and clarity.
-4. **Pattern Recognition** 📊 - Identify recurring patterns and measure various elements around objects in the image.
-5. **Retrieval** 🔄 - Search and retrieve similar images from extensive digital databases.
+1. **_Visualization_** 🌐 - Mengungkap objek atau detail dalam gambar yang tidak langsung terlihat.
+2. **_Recognition_** 🔍 - Mengidentifikasi dan membedakan objek dalam sebuah gambar.
+3. **_Sharpening and Restoration_** ✨ - Memperbagus atau memperbaiki gambar, meningkatkan kualitas dan kejernihan.
+4. **_Pattern Recognition_** 📊 - Mengidentifikasi pola berulang dan mengukur berbagai elemen di sekitar objek dalam gambar.
+5. **_Retrieval_** 🔄 - Mencari dan mengambil gambar serupa dari database yang besar.
 
 </br>
 
-## **🌐 Aplikasi dari Image Processing?**
+## **🌐 Aplikasi Image Processing**
 
-### 1. **Traffic Sensing and Monitoring** 🚗
+- **Traffic Sensing and Monitoring** 🚗
 
-![Traffic Sensing](../displays/Image_Processing_Traffic_Sensing.png "Traffic Sensing")
+  ![Traffic Sensing and Monitoring](../displays/Application_Traffic_Sensing.png)
 
-### 2. **Image Reconstruction** 🖼️
+- **Image Segmentation** 🖼️
 
-![Image Reconstruction](../displays/Image_Processing_Image_Reconstruction.png "Image Reconstruction")
+  ![Image Reconstruction](../displays/Application_Segmentation.jpg)
 
-### 3. **Face Detection** 😎
+- **Face Detection** 😎
 
-![Face Detection](../displays/Image_Processing_Face_Detection.png "Face Detection")
+  ![Face Detection](../displays/Application_Face_Detection.png)
 
 </br>
 
-### **Source:**
-
-[1] [Image Processing Overview](https://www.simplilearn.com/image-processing-article#types_of_image_processing)
+<div style="text-align: center; margin: 24px;">
+  <a href="../README.md" style="
+    display: inline-block;
+    background-color: #e3383a;
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.15s;
+  " onmouseover="this.style.backgroundColor='#4caf50';" onmouseout="this.style.backgroundColor='#e3383a';">
+    Kembali
+  </a>
+</div>

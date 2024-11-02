@@ -11,13 +11,13 @@
 </br>
 </br>
 
-Pada _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, instal terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
+Dalam _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, instal terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
 
 ```bash
 pip install opencv-python
 ```
 
-Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah data dan memvisualisasikan gambar, instal dengan perintah berikut:
+Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah data dan memvisualisasikan gambar. Instal keduanya dengan perintah berikut:
 
 ```bash
 pip install numpy
@@ -33,31 +33,30 @@ pip install matplotlib
 
 0. **[Pendahuluan 📘](/0_Pendahuluan/README.md)**
 
-   - 🤔 Apa itu Image Processing?
-   - 🌐 Aplikasi dari Image Processing?
+   - 🤔 Apa Itu Image Processing?
+   - 🌐 Aplikasi dari Image Processing
 
 1. **[Working with Images 🖼️](/1_Working_With_Images/README.md)**
 
-   - 📸 Gambar itu apa sih?
-   - 📂 Format gambar ada apa aja?
-   - 📥 Membaca, menampikan, dan menyimpan gambar
-   - 🌈 Color Space dalam gambar
-   - ➕ Operasi aritmatika sederhana pada gambar
+   - 📸 Gambar Itu Apa Sih?
+   - 📂 Format Gambar
+   - 🌈 Color Space pada Gambar
+   - 📥 Membaca, Menampilkan, & Menyimpan Gambar
+   - ➕ Operasi Aritmatika Sederhana pada Gambar
 
-2. **[Image Preprocessing 🔧](/2_Image_Preprocessing/README.md)**
+2. **[Image Pre-processing 🔧](/2_Image_Preprocessing/README.md)**
 
-   - ❓ Kenapa harus Image Preprocessing?
-   - 🌈 Lebih lanjut tentang Color Space
-   - 🔄 Rotate and Flip
-   - 📏 Resize and Interpolasi (nearest-neighbor, bilinear, bicubic)
-   - 🔬 Normalisasi
+   - ❓ Mengapa Perlu Image Preprocessing?
+   - 🔄 Rotate & Flip Image
+   - 📏 Resize & Interpolation Method
+   - 🌈 Lebih Lanjut Mengenai Color Space
    - 📊 Histogram
 
 3. **[Menyajikan Gambar dengan Matplotlib 📊](/3_Presenting_Images/README.md)**
 
 4. **[Simple Image Processing ✨](/4_Simple_Image_Processing/README.md)**
 
-   - 🔍 Feature extraction
-   - 😎 Face detection
+   - 🔍 Image Segmentation
+   - 😎 Face Detection
 
 5. **[BONUS! 🎁](/5_BONUS!/README.md)**
