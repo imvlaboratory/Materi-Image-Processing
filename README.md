@@ -1,63 +1,63 @@
-#
+# **Sebelum Dimulai** ⚠️
 
 </br>
 
-## Before You Start 🤏
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="https://opencv.org/wp-content/uploads/2022/05/logo.png" alt="OpenCV" style="height: 50px; margin-right: 10px;">
+    <img src="https://matplotlib.org/stable/_static/logo_dark.svg" alt="Numpy" style="height: 50px; margin-right: 10px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="Matplotlib" style="height: 50px;">
+</div>
 
-In this course, we will use python library called OpenCV for most of the time, so please install it first in your machine by running this command on your terminal:
+</br>
+</br>
 
-```bash
-   pip install opencv-python
-```
-
-also install these two library as we need it aswell:
-
-```bash
-   pip install numpy
-```
+Pada _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, instal terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
 
 ```bash
-   pip install matplotlib
+pip install opencv-python
 ```
 
-if you already install these libraries, you good to go 👌
+Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah data dan memvisualisasikan gambar, instal dengan perintah berikut:
+
+```bash
+pip install numpy
+```
+
+```bash
+pip install matplotlib
+```
 
 </br>
 
-## Materials 📖
+## **Topik Bahasan** 📖
 
-- Introduction
+0. **[Pendahuluan 📘](/0_Pendahuluan/README.md)**
 
-  - What is image processing?
-  - Image processing application?
+   - 🤔 Apa itu Image Processing?
+   - 🌐 Aplikasi dari Image Processing?
 
-- Working with Images
+1. **[Working with Images 🖼️](/1_Working_With_Images/README.md)**
 
-  - What Is an image?
-  - Image format
-  - Reading an image
-  - Display an image
-  - Writting an image
-  - Understanding color spaces (RGB, HSV, CMYK)
-  - Arithmetic operation in image
+   - 📸 Gambar itu apa sih?
+   - 📂 Format gambar ada apa aja?
+   - 📥 Membaca, menampikan, dan menyimpan gambar
+   - 🌈 Color Space dalam gambar
+   - ➕ Operasi aritmatika sederhana pada gambar
 
-- Image preprocessing
+2. **[Image Preprocessing 🔧](/2_Image_Preprocessing/README.md)**
 
-  - More about color spaces
-  - Image Rotation
-  - Image Flip
-  - Image Resizing (interpolation methods: nearest-neighbor, bilinear, bicubic)
-  - Changing color space from one to another
-  - image normalization
-  - histogram equalization
+   - ❓ Kenapa harus Image Preprocessing?
+   - 🌈 Lebih lanjut tentang Color Space
+   - 🔄 Rotate and Flip
+   - 📏 Resize and Interpolasi (nearest-neighbor, bilinear, bicubic)
+   - 🔬 Normalisasi
+   - 📊 Histogram
 
-- Presenting the Images
+3. **[Menyajikan Gambar dengan Matplotlib 📊](/3_Presenting_Images/README.md)**
 
-  - Matplotlib
-  - Plot an image
-  - Label an image
+4. **[Simple Image Processing ✨](/4_Simple_Image_Processing/README.md)**
 
-- Image processing
+   - 🔍 Feature extraction
+   - 😎 Face detection
 
-  - Feature Extraction
-  - face detection with haar cascade
+5. **[BONUS! 🎁](/5_BONUS!/README.md)**
