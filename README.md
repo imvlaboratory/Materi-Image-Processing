@@ -1,4 +1,10 @@
-# **Sebelum Dimulai** ⚠️
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="displays/Banner_Github_Image_Processing.png" alt="Banner">
+</div>
+
+</br>
+
+## **Sebelum Dimulai** ⚠️
 
 </br>
 
@@ -56,7 +62,6 @@ pip install matplotlib
 
 4. **[Simple Image Processing ✨](/4_Simple_Image_Processing/README.md)**
 
-   - 🔍 Image Segmentation
    - 😎 Face Detection
 
 5. **[BONUS! 🎁](/5_BONUS!/README.md)**
