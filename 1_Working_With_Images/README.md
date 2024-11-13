@@ -4,9 +4,9 @@
 
 ## **📸 Apa Itu Gambar?**
 
-**`Gambar`** adalah representasi visual berupa _array_ dua dimensi yang terdiri dari titik-titik kecil yang disebut `piksel`, di mana setiap piksel menyimpan informasi `warna dan kecerahan`. Ukuran gambar, seperti 1920 x 1080 (lebar x tinggi), mengacu pada jumlah total piksel. Misalnya, gambar berukuran **2,073,600 piksel** atau **2 megapiksel**. Setiap piksel menyerupai ubin kecil yang jika disusun bersama membentuk gambar utuh.
+**`Gambar`** adalah representasi visual berupa _array_ dua dimensi yang terdiri dari titik-titik kecil yang disebut `piksel`, di mana setiap piksel menyimpan informasi `warna dan kecerahan`. Ukuran gambar, misalnya 1920 x 1080 (panjang x lebar), mengacu pada jumlah total piksel pada gambar. Dari contoh tersebut, maka gambar berukuran **2,073,600 piksel** atau **2 megapiksel**. Setiap piksel menyerupai ubin atau kotak kecil yang jika disusun bersama akan membentuk suatu gambar yang utuh.
 
-Berikut adalah cara piksel merepresentasikan warna:
+Berikut beberapa cara piksel dalam merepresentasikan warna:
 
 - **Grayscale** 🖤 - setiap piksel memiliki nilai antara 0 (**Hitam**) hingga 255\* (**Putih**).
 - **RGB** 🌈 - setiap piksel memiliki tiga nilai untuk masing-masing _channel_ **Merah** (Red), **Hijau** (Green), dan **Biru** (Blue), dengan nilai antara 0 hingga 255\*.
@@ -17,8 +17,6 @@ Berikut adalah cara piksel merepresentasikan warna:
 </br>
 
 ## **📂 Apa Saja Format Gambar yang Umum?**
-
-Format gambar yang sering digunakan meliputi:
 
 ![Format File Gambar](../displays/Image_Formats.png "Format File Gambar")
 
@@ -34,7 +32,7 @@ _Color space_ atau ruang warna adalah cara untuk merepresentasikan warna dalam g
 
   ![Color Space RGB](../displays/Color_Space_RGB_AdditiveColor.svg)
 
-- **CMYK (Cyan, Magenta, Yellow, Black)** - Ruang warna untuk percetakan, bersifat _subtractive_.
+- **CMYK (Cyan, Magenta, Yellow, Key/Black)** - Ruang warna untuk percetakan, bersifat _subtractive_.
 
   ![Color Space CMYK](../displays/Color_Space_CMYK_SubtractiveColor.svg)
 

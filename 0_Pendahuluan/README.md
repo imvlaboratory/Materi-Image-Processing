@@ -4,7 +4,7 @@
 
 ## **🤔 Apa Itu Image Processing?**
 
-Secara umum, `image processing` adalah seni dan teknik mengolah gambar agar menjadi lebih berguna dan bermanfaat. Dengan memanipulasi gambar, kita dapat mengungkap detail tersembunyi, menyempurnakan fitur tertentu, atau mengekstrak data penting dari gambar. _Image processing_ memandang gambar sebagai sinyal 2D, yang memungkinkan kita menerapkan berbagai teknik pemrosesan sinyal untuk membuat gambar lebih bermakna dan lebih mudah diadaptasi dalam berbagai aplikasi. Berikut beberapa teknik utama dalam image processing:
+Secara umum, `image processing` adalah seni dan teknik mengolah gambar agar menjadi lebih berguna dan bermanfaat. Dengan memanipulasi gambar, kita dapat mengungkap detail tersembunyi, menyempurnakan fitur tertentu, atau mengekstrak data penting dari gambar. `Image processing` memandang gambar sebagai sinyal dua dimensi, yang memungkinkan kita menerapkan berbagai teknik pemrosesan sinyal untuk membuat gambar lebih bermakna dan lebih mudah diadaptasi dalam berbagai aplikasi. Berikut beberapa teknik utama dalam image processing:
 
 1. **_Visualization_** 🌐 - Mengungkap objek atau detail dalam gambar yang tidak langsung terlihat.
 2. **_Recognition_** 🔍 - Mengidentifikasi dan membedakan objek dalam sebuah gambar.

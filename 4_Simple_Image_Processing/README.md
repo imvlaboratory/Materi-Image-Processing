@@ -36,51 +36,48 @@ Adapun kelebihan dan kekurangan model Haar Cascade:
 
 ## Face Detection dengan Haar Cascade Classifier
 
-1. Load dan Persiapkan Gambar
+1. Siapkan Gambar
 
-   Pertama, kita perlu memuat gambar yang akan dianalisis dan mengonversinya ke skala abu-abu (grayscale) agar deteksi lebih cepat dan akurat.
+   Pertama-tama, muat gambar yang akan dianalisis lalu konversi ke grayscale suapaya deteksi lebih cepat dan akurat.
 
    ```python
    import cv2
 
-   # Memuat gambar dari path
    img = cv2.imread("path_to_image")
-   # Mengubah gambar ke skala abu-abu
    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
    ```
 
 2. Muat Model Cascade
 
-   Selanjutnya, kita perlu memuat model **Haar Cascade** yang digunakan untuk mendeteksi wajah. File XML ini berisi fitur wajah yang diperlukan untuk proses deteksi.
+   Selanjutnya, kita perlu memuat model **`Haar Cascade`** yang akan digunakan untuk mendeteksi wajah. Model berupa file XML dapat diunduh di [**GitHub OpenCV**](https://github.com/opencv/opencv/tree/master/data/haarcascades). File XML ini berisi fitur wajah yang diperlukan untuk proses deteksi.
 
    ```python
-   # Memuat file model cascade
    face_cascade = cv2.CascadeClassifier("cascade_model.xml")
    ```
 
 3. Deteksi Wajah dan Gambar Kotak Deteksi
 
-   Setelah model dan gambar siap, kita dapat melakukan deteksi wajah. Setiap wajah yang terdeteksi akan ditandai dengan kotak hijau.
+   Setelah gambar dan model disiapkan, selanjutnya kita bisa melakukan deteksi wajah. Setiap wajah yang terdeteksi akan ditandai dengan kotak hijau.
 
    ```python
-   # Melakukan deteksi wajah pada gambar
+   # Deteksi wajah pada gambar
    faces = face_cascade.detectMultiScale(
        gray,              # Gambar grayscale
-       scaleFactor=1.3,   # Faktor skala untuk mengecilkan ukuran gambar
+       scaleFactor=1.3,   # Faktor untuk mengecilkan ukuran gambar
        minNeighbors=5     # Jumlah tetangga minimum untuk mempertahankan deteksi
    )
 
-   # Menandai setiap wajah yang terdeteksi dengan kotak
+   # Menandai setiap wajah yang terdeteksi dengan kotak deteksi
    for (x, y, w, h) in faces:
-       # Menggambar kotak di sekitar wajah
+       # Menggambar kotak deteksi di sekitar wajah
        img = cv2.rectangle(
-           img,            # Gambar sumber
+           img,            # Gambar asli
            (x, y),         # Koordinat kiri atas kotak
            (x + w, y + h), # Koordinat kanan bawah kotak
            (0, 255, 0),    # Warna kotak (hijau dalam format BGR)
            2               # Ketebalan garis kotak
        )
-       # Memisahkan area wajah di gambar grayscale dan berwarna
+       # Memisahkan area wajah pada gambar grayscale dan berwarna
        roi_gray = gray[y:y+h, x:x+w]
        roi_color = img[y:y+h, x:x+w]
    ```

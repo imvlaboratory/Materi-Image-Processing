@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center; justify-content: center;">
+<div style="display: flex; align-items: center; justify-content: center;" align="center">
     <img src="displays/Banner_Github_Image_Processing.png" alt="Banner">
 </div>
 
@@ -8,7 +8,7 @@
 
 </br>
 
-<div style="display: flex; align-items: center; justify-content: center;">
+<div style="display: flex; align-items: center; justify-content: center;" align="center">
     <img src="https://opencv.org/wp-content/uploads/2022/05/logo.png" alt="OpenCV" style="height: 50px; margin-right: 10px;">
     <img src="https://matplotlib.org/stable/_static/logo_dark.svg" alt="Numpy" style="height: 50px; margin-right: 10px;">
     <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/NumPy_logo_2020.svg" alt="Matplotlib" style="height: 50px;">
@@ -23,7 +23,7 @@ Dalam _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https:
 pip install opencv-python
 ```
 
-Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah data dan memvisualisasikan gambar. Instal keduanya dengan perintah berikut:
+Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah dan plot gambar. Instal keduanya dengan perintah berikut:
 
 ```bash
 pip install numpy

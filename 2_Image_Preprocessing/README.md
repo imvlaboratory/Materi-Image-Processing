@@ -69,29 +69,52 @@
 
 - Interpolation method:
 
-  - **cv2.INTER_AREA**: Digunakan saat mengecilkan gambar.
+  - **cv2.INTER_NEAREST** (nearest neighbor interpolation)
+
+    Digunakan ketika memprioritaskan kecepatan.
 
     ```python
-    cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
+    cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_NEAREST)
     ```
 
-  - **cv2.INTER_CUBIC**: Lebih lambat tapi lebih akurat.
+  - **cv2.INTER_LINEAR** (bilinear interpolation)
 
-    ```python
-    cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_CUBIC)
-    ```
-
-  - **cv2.INTER_LINEAR**: Digunakan saat memperbesar gambar dan merupakan metode interpolasi default pada OpenCV.
+    Digunakan dalam penskalaan general dan merupakan metode interpolasi default pada OpenCV.
 
     ```python
     cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_LINEAR)
     ```
 
+  - **cv2.INTER_CUBIC** (bicubic interpolation)
+
+    Digunakan ketika membutuhkan kualitas tinggi, tetapi lebih lambat.
+
+    ```python
+    cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_CUBIC)
+    ```
+
+  - **cv2.INTER_AREA** (resampling using pixel area relation)
+
+    Digunakan ketika mengecilkan gambar.
+
+    ```python
+    cv2.resize(img, (0, 0), fx=0.5, fy=0.5, interpolation=cv2.INTER_AREA)
+    ```
+
+  - **Summary**
+
+    | Interpolation Method                 | Use Case                                                                                                                          | Advantages                                                         | Disadvantages                                                            |
+    | ------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------------ |
+    | **INTER_NEAREST** (Nearest Neighbor) | Fast processing or handling discrete data (e.g., masks, segmentation maps). Suitable for pixel art where hard edges are required. | Very fast; preserves sharp edges.                                  | Can produce blocky, less smooth results when scaling up.                 |
+    | **INTER_LINEAR** (Bilinear)          | General-purpose scaling; default choice for moderate quality needs.                                                               | Smoother than INTER_NEAREST; reasonably fast.                      | May introduce slight blurring, especially when scaling up.               |
+    | **INTER_CUBIC** (Bicubic)            | High-quality upscaling, preferred for enlarging photos or detailed images.                                                        | Produces smoother, high-quality images with more detail.           | Slower than INTER_LINEAR and INTER_NEAREST.                              |
+    | **INTER_AREA** (Pixel Area Relation) | High-quality downscaling, ideal for decimation (e.g., thumbnails).                                                                | Maintains image quality when downscaling; prevents moire patterns. | Similar to INTER_NEAREST when used for upscaling, which reduces quality. |
+
 </br>
 
 ## **🌈 Lebih Lanjut Mengenai Color Space**
 
-OpenCV mendukung banyak color space, yang dapat dilihat pada dokumentasi resmi OpenCV [di sini](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html). Berikut adalah beberapa yang sering digunakan:
+OpenCV mendukung banyak _color space_, dapat dilihat pada dokumentasi resmi OpenCV [di sini](https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html). Berikut adalah beberapa yang sering digunakan:
 
 ```python
 # RGB ke GRAY dan sebaliknya

@@ -19,11 +19,11 @@
 
 2. Stream Video
 
-   Untuk menampilkan stream video dari kamera atau file video:
+   Untuk menampilkan video stream dari kamera atau video file:
 
    ```python
    while cap.isOpened():
-      # Membaca frame demi frame
+      # Membaca frame by frame
       ret, frame = cap.read()
       # Jika frame berhasil dibaca
       if ret:
@@ -59,40 +59,31 @@
 ## Haar Cascade Classifier on Video
 
 ```python
-# Membuka kamera atau file video
 cap = cv2.VideoCapture(0)
-# Memuat model Haar Cascade
 face_cascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 while cap.isOpened():
-    # Membaca frame demi frame
     ret, frame = cap.read()
 
     if ret:
-        # Mengonversi frame menjadi grayscale
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
-        # Melakukan deteksi wajah
         faces = face_cascade.detectMultiScale(
             gray,
             scaleFactor=1.3,
             minNeighbors=5
         )
 
-        # Menandai setiap wajah yang terdeteksi dengan kotak
         for (x, y, w, h) in faces:
             cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
 
-        # Menampilkan hasil deteksi wajah
         cv2.imshow('Face Detection', frame)
 
-        # Tekan 'Q' pada keyboard untuk keluar
         if cv2.waitKey(25) & 0xFF == ord('q'):
             break
     else:
         break
 
-# Menutup video
 cap.release()
 cv2.destroyAllWindows()
 ```

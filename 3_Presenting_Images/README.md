@@ -2,7 +2,7 @@
 
 </br>
 
-Untuk memudahkan perbandingan dan tampilan gambar, kita dapat menggunakan Matplotlib untuk menampilkan beberapa gambar dalam satu _window_. Library Matplotlib sangat berguna untuk membandingkan beberapa gambar sekaligus. Dalam Matplotlib, fungsi `subplot()` digunakan untuk mengatur tata letak _subplot_ dalam satu _figure_. Dengan `subplot`, kita dapat menyusun beberapa plot dalam satu _figure_ secara teratur dalam baris dan kolom.
+Untuk memudahkan melihat perbandingan dan tampilan gambar, kita dapat menggunakan _library_ `Matplotlib` untuk menampilkan beberapa gambar dalam satu _window_. _Library_ `Matplotlib` sangat berguna untuk membandingkan beberapa gambar sekaligus. Dalam `Matplotlib`, fungsi `subplot()` digunakan untuk mengatur tata letak _subplot_ dalam satu _figure_. Dengan `subplot`, kita dapat menyusun beberapa plot dalam satu _figure_ secara teratur dalam baris dan kolom.
 
 Fungsi `subplot()` membutuhkan tiga parameter utama:
 
