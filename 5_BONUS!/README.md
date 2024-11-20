@@ -23,26 +23,13 @@
 
    ```python
    while cap.isOpened():
-      # Membaca frame by frame
-      ret, frame = cap.read()
-      # Jika frame berhasil dibaca
-      if ret:
-          # Mengonversi frame menjadi grayscale
-          gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-          # Mendeteksi wajah pada frame grayscale
-          faces = face_cascade.detectMultiScale(gray,scaleFactor=1.3,minNeighbors=5)
-          # Menggambar kotak di sekitar setiap wajah yang terdeteksi
-          for (x, y, w, h) in faces:
-              cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
-          # Menampilkan frame dengan deteksi wajah
-          cv2.imshow('Video Stream', frame)
-          # Tekan 'q' pada keyboard untuk keluar
-          if cv2.waitKey(25) & 0xFF == ord('q'):
-              break
-      else:
-          # Keluar dari loop jika frame tidak berhasil dibaca
-          break
-
+       ret, frame = cap.read()
+       if ret:
+           cv2.imshow('Video Stream', frame)
+           if cv2.waitKey(25) & 0xFF == ord('q'):
+               break
+       else:
+           break
    ```
 
 3. Close Video
@@ -75,9 +62,15 @@ while cap.isOpened():
         )
 
         for (x, y, w, h) in faces:
-            cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2)
+            cv2.rectangle(
+                frame,
+                (x, y),
+                (x + w, y + h),
+                (0, 255, 0),
+                2
+            )
 
-        cv2.imshow('Face Detection', frame)
+        cv2.imshow('Realtime Face Detection', frame)
 
         if cv2.waitKey(25) & 0xFF == ord('q'):
             break

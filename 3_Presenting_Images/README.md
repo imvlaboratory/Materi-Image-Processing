@@ -15,7 +15,8 @@ Berikut contoh penggunaan subplot menggunakan Matplotlib:
 ```python
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(9, 9))  # Mengatur ukuran figure
+# Mengatur ukuran figure
+plt.figure(figsize=(9, 9))
 plt.suptitle("Judul Figure")
 
 plt.subplot(2, 2, 1)
@@ -34,8 +35,10 @@ plt.subplot(2, 2, 4)
 plt.title('Judul Subplot 4')
 plt.imshow(img4)
 
-plt.tight_layout()  # Mengatur supaya subplot tidak saling tumpang tindih
-plt.show()  # Menampilkan figure
+# Mengatur supaya subplot tidak saling tumpang tindih
+plt.tight_layout()
+# Menampilkan figure
+plt.show()
 ```
 
 </br>

@@ -59,12 +59,12 @@
 
   ```python
   # Make it smaller
-  cv2.resize(image, (0, 0), fx=0.5, fy=0.5)
   cv2.resize(image, (500, 500))
+  cv2.resize(image, (0, 0), fx=0.5, fy=0.5)
 
   # Make it bigger
-  cv2.resize(image, (0, 0), fx=2, fy=2)
   cv2.resize(image, (2000, 2000))
+  cv2.resize(image, (0, 0), fx=2, fy=2)
   ```
 
 - Interpolation method:
@@ -122,8 +122,8 @@ cv2.cvtColor(cv2.COLOR_RGB2GRAY)
 cv2.cvtColor(cv2.COLOR_GRAY2RGB)
 
 # RGB ke BGR dan sebaliknya
-cv2.cvtColor(cv2.COLOR_BGR2RGB)
 cv2.cvtColor(cv2.COLOR_RGB2BGR)
+cv2.cvtColor(cv2.COLOR_BGR2RGB)
 
 # RGB ke HSV dan sebaliknya
 cv2.cvtColor(cv2.COLOR_RGB2HSV)
@@ -141,18 +141,33 @@ cv2.cvtColor(cv2.COLOR_LAB2RGB)
 Dengan histogram, kita bisa melihat distribusi warna pada suatu gambar.
 
 ```python
-img = cv2.imread("../assets/Enid.jpeg")
+img = cv2.imread("path_to_image")
 
 # Calculate RGB Channel Histogram
 histrBlue = cv2.calcHist([img], [0], None, [256], [0, 256])
 histrGreen = cv2.calcHist([img], [1], None, [256], [0, 256])
 histrRed = cv2.calcHist([img], [2], None, [256], [0, 256])
+```
 
-# Convert RGB to GRAY
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+Tampilkan histogram dengan _library_ Matplotlib
 
-# Calculate GRAY Channel Histogram
-equHistr = cv2.calcHist([gray], [0], None, [256], [0, 256])
+```python
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(9, 12))
+
+plt.subplot(2, 1, 1)
+plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
+plt.title('Original Image')
+
+plt.subplot(2, 1, 2)
+plt.plot(histoBlue, color='blue')
+plt.plot(histoGreen, color='green')
+plt.plot(histoRed, color='red')
+plt.title('Histogram RGB')
+
+plt.tight_layout()
+plt.show()
 ```
 
 </br>

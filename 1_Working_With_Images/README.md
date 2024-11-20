@@ -12,7 +12,7 @@ Berikut beberapa cara piksel dalam merepresentasikan warna:
 - **RGB** 🌈 - setiap piksel memiliki tiga nilai untuk masing-masing _channel_ **Merah** (Red), **Hijau** (Green), dan **Biru** (Blue), dengan nilai antara 0 hingga 255\*.
 - **RGBA** 🌫️ - merupakan RGB dengan tambahan satu _channel_ **Alpha** untuk menyimpan nilai transparansi.
 
-\*untuk gambar 8-bit.
+\*untuk gambar `8-bit`.
 
 </br>
 
@@ -54,6 +54,9 @@ _Color space_ atau ruang warna adalah cara untuk merepresentasikan warna dalam g
 
   ```python
   cv2.imshow("window_name", image)
+
+  cv2.waitKey(0)          # menunggu sampai user menekan key pada keyboard
+  cv2.destroyAllWindows() # menutup semua opencv windows
   ```
 
 - Menyimpan gambar:

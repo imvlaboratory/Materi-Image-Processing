@@ -87,7 +87,6 @@ Adapun kelebihan dan kekurangan model Haar Cascade:
    Langkah terakhir adalah menampilkan gambar yang sudah ditandai.
 
    ```python
-   # Menampilkan gambar hasil deteksi
    cv2.imshow('Hasil Deteksi Wajah', img)
    cv2.waitKey(0)
    cv2.destroyAllWindows()

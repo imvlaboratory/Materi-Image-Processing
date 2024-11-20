@@ -17,6 +17,8 @@
 </br>
 </br>
 
+### 1. Setup Enviroment
+
 Dalam _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, instal terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
 
 ```bash
@@ -32,6 +34,57 @@ pip install numpy
 ```bash
 pip install matplotlib
 ```
+
+Atau bisa langsung menggunakan perintah berikut untuk menginstal semua _library_ secara bersamaan:
+
+```bash
+pip install opencv-python numpy matplotlib
+```
+
+</br>
+
+### 2. Setup Menggunakan Virtual Environtment
+
+Untuk menghindari konflik dengan _library_ yang sudah terinstal pada sistem, kita dapat menggunakan _virtual environment_ untuk membuat _environtment_ yang `terisolasi`. Ikuti langkah-lankah berikut untuk membuat dan mengaktifkan _virtual environment_:
+
+- Install terlebih dahulu _library_ `virtualenv`
+
+  ```bash
+  pip install virtualenv
+  ```
+
+- Buat _virtual environment_ baru dengan nama `env`
+
+  ```bash
+  python -m venv env
+  ```
+
+- Aktifkan _virtual environment_ yang baru saja dibuat
+
+  - untuk pengguna **Windows**
+
+    ```bash
+    # Jika menggunakan Terminal CMD
+    env/Scripts/activate.bat
+    # Jika menggunakan Terminal PowerShell
+    env/Scripts/Activate.ps1
+    ```
+
+  - untuk pengguna **MacOS**
+
+    ```bash
+    source env/bin/activate
+    ```
+
+  _environtment_ aktif ditandai dengan nama _environtment_ pada terminal
+
+  ![Environtment Active](/displays/Environtment_Active.png)
+
+- Setelah _virtual environment_ aktif, install _library_ yang dibutuhkan
+
+  ```bash
+  pip install -r requirements.txt
+  ```
 
 </br>
 
