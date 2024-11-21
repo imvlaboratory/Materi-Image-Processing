@@ -19,13 +19,13 @@
 
 ### 1. Setup Enviroment
 
-Dalam _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, instal terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
+Dalam _course_ ini, kita akan menggunakan _library_ [**`OpenCV Python`**](https://pypi.org/project/opencv-python/) untuk memanipulasi gambar. Sebelum memulai, install terlebih dahulu _library_ yang diperlukan dengan menjalankan perintah di bawah ini pada terminal:
 
 ```bash
 pip install opencv-python
 ```
 
-Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah dan plot gambar. Instal keduanya dengan perintah berikut:
+Kita juga membutuhkan _library_ [**`NumPy`**](https://numpy.org/) dan [**`Matplotlib`**](https://matplotlib.org/) untuk mengolah dan plot gambar. Install keduanya dengan perintah berikut:
 
 ```bash
 pip install numpy
@@ -35,7 +35,7 @@ pip install numpy
 pip install matplotlib
 ```
 
-Atau bisa langsung menggunakan perintah berikut untuk menginstal semua _library_ secara bersamaan:
+Atau bisa langsung menggunakan perintah berikut untuk menginstall semua _library_ secara bersamaan:
 
 ```bash
 pip install opencv-python numpy matplotlib
@@ -45,7 +45,7 @@ pip install opencv-python numpy matplotlib
 
 ### 2. Setup Menggunakan Virtual Environtment
 
-Untuk menghindari konflik dengan _library_ yang sudah terinstal pada sistem, kita dapat menggunakan _virtual environment_ untuk membuat _environtment_ yang `terisolasi`. Ikuti langkah-lankah berikut untuk membuat dan mengaktifkan _virtual environment_:
+Untuk menghindari konflik dengan _library_ yang sudah terinstal pada sistem, kita dapat menggunakan _virtual environment_ untuk membuat _environtment_ yang `terisolasi`. Ikuti langkah-langkah berikut untuk membuat dan mengaktifkan _virtual environment_:
 
 - Install terlebih dahulu _library_ `virtualenv`
 
