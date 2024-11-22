@@ -118,20 +118,20 @@ OpenCV mendukung banyak _color space_, dapat dilihat pada dokumentasi resmi Open
 
 ```python
 # RGB ke GRAY dan sebaliknya
-cv2.cvtColor(cv2.COLOR_RGB2GRAY)
-cv2.cvtColor(cv2.COLOR_GRAY2RGB)
+cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+cv2.cvtColor(img, cv2.COLOR_GRAY2RGB)
 
 # RGB ke BGR dan sebaliknya
-cv2.cvtColor(cv2.COLOR_RGB2BGR)
-cv2.cvtColor(cv2.COLOR_BGR2RGB)
+cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 # RGB ke HSV dan sebaliknya
-cv2.cvtColor(cv2.COLOR_RGB2HSV)
-cv2.cvtColor(cv2.COLOR_HSV2RGB)
+cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
+cv2.cvtColor(img, cv2.COLOR_HSV2RGB)
 
 # RGB ke LAB dan sebaliknya
-cv2.cvtColor(cv2.COLOR_RGB2LAB)
-cv2.cvtColor(cv2.COLOR_LAB2RGB)
+cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
+cv2.cvtColor(img, cv2.COLOR_LAB2RGB)
 ```
 
 </br>
